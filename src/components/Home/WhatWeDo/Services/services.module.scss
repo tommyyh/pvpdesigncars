@@ -1,0 +1,56 @@
+@import '../../../../app/utils.scss';
+
+.services {
+  display: grid;
+  grid-template-columns: 33.33% 33.33% 33.33%;
+
+  margin: 3.31rem 0 0 0;
+  width: 100%;
+
+  background: #0B1727;
+  box-shadow: 0 4px 250px secondVariation(0.112);
+  border-radius: 2.44rem;
+}
+
+// Service
+.service {
+  position: relative;
+  padding: 3.06rem 3.56rem 1.94rem 3.56rem;
+
+  h3 {
+    font-size: 1.38rem;
+    font-weight: 400;
+  }
+
+  p {
+    margin: 0.89rem 0 0 0;
+    
+    font-size: 1.11rem;
+    font-weight: 300;
+    color: secondVariation(0.6);
+    line-height: 142.5%;
+  }
+  
+  h4 {
+    margin: 1.89rem 0 0 0;
+
+    font-size: 1.29rem;
+    font-weight: 400;
+    color: var(--accent2);
+    text-shadow: 0 4px 18.4px var(--accent);
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    width: 2px;
+    height: 100%;
+    top: 0;
+    right: 0;
+    background: linear-gradient(180deg, rgba(14,26,42,1) 8%, rgb(27, 53, 88) 49%, rgba(14,26,42,1) 88%);
+  }
+
+  &:last-child::after {
+    all: initial;
+  }
+}

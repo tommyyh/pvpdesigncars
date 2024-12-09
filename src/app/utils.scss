@@ -1,0 +1,13 @@
+@function secondVariation($opacity) {
+  @return rgb(from var(--second) r g b / $opacity);
+}
+
+@function accentVariation($opacity) {
+  @return rgb(from var(--accent) r g b / $opacity);
+}
+
+@mixin sub {
+  font-size: 1.12rem;
+  font-weight: 300;
+  color: secondVariation(0.8);
+}

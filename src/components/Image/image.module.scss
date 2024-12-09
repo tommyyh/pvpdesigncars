@@ -1,0 +1,17 @@
+// Image
+.img {
+  transition: 400ms ease;
+  filter: blur(0rem);
+  clip-path: polygon(0 0,100% 0, 100% 100%, 0 100%);
+}
+
+.blur {
+  filter: blur(0.7rem);
+}
+
+// Wrapper
+.imgWrapper {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}

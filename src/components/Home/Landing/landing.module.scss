@@ -1,0 +1,51 @@
+@import '../../../app/utils.scss';
+
+.landing {
+  width: 100%;
+  padding: 0 var(--padding);
+  margin: -1rem 0 0 0;
+
+  // SUb
+  h4 {
+    @include sub;
+  }
+
+  // Title
+  .content {
+    display: flex;
+    align-items: flex-end;
+  }
+
+  h1 {
+    margin: 1.3rem 0 0 0;
+
+    font-size: 3.94rem;
+    font-weight: 500;
+    letter-spacing: -0.2rem;
+    line-height: 114%;
+    text-transform: capitalize;
+
+    span {
+      display: block;
+    }
+  }
+
+  .button {
+    margin: 0 0 0.52rem 2.63rem;
+  }
+}
+
+.img {
+  position: relative;
+  width: 100%;
+  height: 39rem;
+  margin: 2.56rem 0 0 0;
+
+  box-shadow: 0 4px 250px accentVariation(0.24);
+
+  img {
+    border-radius: 2.38rem;
+    object-fit: cover;
+    border-bottom-right-radius: 0;
+  }
+}

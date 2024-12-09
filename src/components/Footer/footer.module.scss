@@ -1,0 +1,99 @@
+@import '../../app/utils.scss';
+
+.footer {
+  padding: 4rem var(--padding) 3.4rem var(--padding);
+
+  .logo {
+    width: 10.25rem;
+    height: 3rem;
+    position: relative;
+  }
+  
+  img {
+    box-shadow: 0 4px 51px rgb(166, 12, 12, 0.13);
+    cursor: pointer;
+  
+    &:first-child {
+      transform: scale(0.989);
+    }
+  
+    &:hover {
+      opacity: 0.77;
+      transition: var(--transition);
+    }
+  }
+  
+  .instagram {
+    padding: 0.7rem 0 0 1.4rem;
+    vertical-align: top;
+  }
+
+}
+
+// Main
+.main {
+  display: grid;
+  grid-template-columns: 23.84% 32.88% 43.28%;
+  justify-content: space-between;
+  margin: 2.5rem 0 0 0;
+
+  // Links
+  ul {
+    margin: 0.5rem 2.4rem 0 0;
+
+    li {
+      margin: 0 0 1.2rem 0;
+
+      font-size: 1.13rem;
+      list-style-type: none;
+      
+      a {
+        position: relative;
+
+        color: secondVariation(0.82);
+        text-decoration: none;
+        font-weight: 300;
+        transition: var(--transition);
+
+        &::before {
+          content: '';
+          position: absolute;
+          left: 1%;
+          bottom: -0.5rem;
+          width: 0%;
+          height: 1px;
+          
+          background: var(--accent);
+          transition: var(--transition);
+          opacity: 0.7;
+        }
+
+        &:hover {
+          color: secondVariation(0.677);
+
+          &::before {
+            width: 79%;
+          }
+        }
+      }
+    }
+  }
+
+  h6 {
+    display: flex;
+    align-self: flex-end;
+
+    color: secondVariation(0.82);
+    font-weight: 300;
+    font-size: 1.13rem;
+  }
+}
+
+// Right
+.socials {
+  margin: 3.35rem 0 0 0;
+
+  img {
+    box-shadow: 0 4px 31px rgb(166, 12, 12, 0.35);
+  }
+}

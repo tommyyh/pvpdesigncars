@@ -1,0 +1,71 @@
+@import '../../../app/utils.scss';
+
+.work {
+  padding: 12rem var(--padding) 0 var(--padding);
+
+  h2 {
+    font-size: 1.8rem;
+    font-weight: 400;
+  }
+}
+
+// Images
+.images {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 50% 50%);
+
+  margin: 2.2rem 0 0 0;
+}
+
+.img {
+  width: 108%;
+  aspect-ratio: 683/486;
+  position: relative;
+  margin: 0 0 2.8rem 0;
+
+  // box-shadow: 0 4px 250px accentVariation(0.333);
+  filter: drop-shadow(0 4px 250px accentVariation(0.333));
+
+  &:nth-child(even) {
+    margin: 0 0 0 -2.82rem;
+  }
+}
+
+.link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 100%;
+  height: 3.3rem;
+  margin: 4rem 0 0 0;
+
+  border: 0.11rem solid var(--accent2);
+  color: var(--accent2);
+  letter-spacing: -0.01rem;
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 1.22rem;
+  border-radius: 10rem;
+  border-bottom-left-radius: 0;
+  transition: var(--transition);
+
+  img {
+    margin: 0 0 0 0.3rem;
+    transform: scale(0.89);
+    transition: var(--transition);
+
+    path {
+      transition: var(--transition);
+    }
+  }
+
+  &:hover {
+    background: var(--accent2);
+    color: var(--second);
+
+    img {
+      filter: brightness(0) invert(1);
+    }
+  }
+}

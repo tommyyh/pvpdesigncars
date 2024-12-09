@@ -1,0 +1,31 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary: #0B1727;
+  --second: #fff;
+  --accent: #A60C0C;
+  --accent2: #FF5558;
+  
+  --satoshi: 'Satoshi', sans-serif;
+
+  --content-width: 1268px; /* Your fixed content width */
+  --viewport-excess: max(0px, 100vw - var(--content-width)); /* Calculate excess width */
+  --viewport-half-excess: calc(var(--viewport-excess) / 2); /* Divide excess by 2 for both sides */
+  --padding: calc(var(--viewport-half-excess) + 1rem); /* Padding on each side */
+
+  --transition: ease 300ms;
+}
+
+body {
+  font-family: var(--satoshi);
+  background: var(--primary);
+  color: var(--second);
+}
+
+html {
+  scroll-behavior: smooth;
+}

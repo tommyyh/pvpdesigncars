@@ -1,0 +1,65 @@
+@import '../../../app/utils.scss';
+
+.cta {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+  width: 96.4%;
+  max-width: 1559px;
+  padding: 4.3rem 0 6rem 0;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 15rem 0 0 0;
+  position: relative;
+
+  background: #0F1B2A;
+  box-shadow: 0 4px 226px secondVariation(0.12);
+  border-radius: 2.31rem;
+
+  .inner {
+    padding: 0 10vw;
+
+    display: grid;
+    grid-template-columns: 46% 50%;
+    justify-content: space-between;
+    
+    margin: 0.97rem 0 0 0;
+
+    h2 {
+      margin: 1rem 0 0 0;
+
+      font-size: 2.76rem;
+      font-weight: 600;
+      letter-spacing: -0.048rem;
+      line-height: 131%;
+      text-transform: capitalize;
+    }
+
+    p {
+      margin: 2.6rem 0 2.3rem 0;
+
+      font-size: 1.23rem;
+      color: secondVariation(0.69);
+      font-weight: 300;
+      line-height: 193%;
+    }
+  }
+
+  h4 {
+    @include sub;
+
+    width: fit-content;
+
+    color: secondVariation(0.7);
+  }
+}
+
+@media all and (min-width: 2560px) {
+  .cta {
+    .inner {
+      padding: 0 15rem;
+    }
+  }
+
+}
