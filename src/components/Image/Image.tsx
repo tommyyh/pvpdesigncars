@@ -6,8 +6,8 @@ import Image from 'next/image';
 
 type ImageComponentType = {
   customClass: string;
-  src: string;
-  alt: string;
+  src: any;
+  alt: any;
 };
 
 const ImageComponent = ({ customClass, src, alt }: ImageComponentType) => {
