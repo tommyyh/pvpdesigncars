@@ -5,7 +5,7 @@ import style from './image.module.scss';
 import Image from 'next/image';
 
 type ImageComponentType = {
-  customClass: string;
+  customClass?: string;
   src: any;
   alt: any;
 };
