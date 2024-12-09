@@ -1,7 +1,6 @@
 import React from 'react';
 import style from './work.module.scss';
 import ImageComponent from '@/components/Image/Image';
-import Link from 'next/link';
 import ArrowRight from '@/public/icons/arrow-right.svg';
 import Image from 'next/image';
 import Work1Png from '@/public/work/1.png';

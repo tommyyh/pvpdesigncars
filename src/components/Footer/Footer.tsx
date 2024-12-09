@@ -3,7 +3,6 @@ import style from './footer.module.scss';
 import Image from 'next/image';
 import FacebookSvg from '@/public/icons/facebook.svg';
 import InstagramSvg from '@/public/icons/instagram.svg';
-import Link from 'next/link';
 import LogoPng from '@/public/icons/logo.png';
 
 const Footer = () => {
