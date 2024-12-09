@@ -18,7 +18,8 @@ const ImageComponent = ({ customClass, src, alt }: ImageComponentType) => {
       fill
       placeholder="blur"
       className={`${style.blur} ${style.img} ${customClass}`}
-      onLoad={(img: any) => img.target.classList.remove(style.blur)}
+      // @ts-ignore
+      onLoad={(img: string) => img.target.classList.remove(style.blur)}
     />
   );
 };
