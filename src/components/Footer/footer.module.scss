@@ -76,6 +76,26 @@
           }
         }
       }
+
+      &:first-child {
+        img {
+          vertical-align: bottom;
+          margin: 0 0.3rem 0 0;
+        }
+      }
+
+      &:nth-child(2) {
+        img {
+          margin: 0 0.3rem 0 0;
+        }
+      }
+
+      &:last-child {
+        img {
+          margin: 0 0.2rem 0 0;
+        }
+      }
+
     }
   }
 

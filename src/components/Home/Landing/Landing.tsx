@@ -1,7 +1,7 @@
 import React from 'react';
 import style from './landing.module.scss';
 import Button from '@/components/Button/Button';
-import LandingJpg from '@/public/landing/landing.jpg';
+import LandingPng from '@/public/landing/landing.png';
 import ImageComponent from '@/components/Image/Image';
 
 const Landing = () => {
@@ -23,7 +23,7 @@ const Landing = () => {
       </div>
 
       <div className={style.img}>
-        <ImageComponent src={LandingJpg} alt="Auta" />
+        <ImageComponent src={LandingPng} alt="Auta" />
       </div>
     </main>
   );

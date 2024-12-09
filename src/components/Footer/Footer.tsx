@@ -3,6 +3,9 @@ import style from './footer.module.scss';
 import Image from 'next/image';
 import FacebookSvg from '@/public/icons/facebook.svg';
 import InstagramSvg from '@/public/icons/instagram.svg';
+import LocationSvg from '@/public/icons/location_w.svg';
+import MailSvg from '@/public/icons/mail_w.svg';
+import PhoneSvg from '@/public/icons/phone_w.svg';
 import LogoPng from '@/public/icons/logo.png';
 
 const Footer = () => {
@@ -30,18 +33,34 @@ const Footer = () => {
               Kontakt
             </a>
           </li>
+          <li style={{ margin: '2rem 0 0 0' }}>
+            <a href="https://betalab.vercel.app/en" target="_blank">
+              Designoval: Betalab
+            </a>
+          </li>
         </ul>
 
         <div>
           <ul>
             <li>
-              <a href="mailto:pvpdesigncars@gmail.com">
-                Email: pvpdesigncars@gmail.com
+              <a
+                href="https://maps.app.goo.gl/KXUDbEBf3ZxVfZ459"
+                target="_blank"
+              >
+                <Image src={LocationSvg} alt="Mail" /> Sokolská 27, Zbůch
               </a>
             </li>
 
             <li>
-              <a href="tel:+420795835093">Tel: +420 795 835 093</a>
+              <a href="mailto:pvpdesigncars@gmail.com">
+                <Image src={MailSvg} alt="Mail" /> pvpdesigncars@gmail.com
+              </a>
+            </li>
+
+            <li>
+              <a href="tel:+420795835093">
+                <Image src={PhoneSvg} alt="Phone" /> +420 795 835 093
+              </a>
             </li>
           </ul>
 

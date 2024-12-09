@@ -5,7 +5,7 @@ const Services = () => {
   return (
     <div className={style.services}>
       <Service
-        title="Celolepy"
+        title="Celolepy & částečné polepy"
         text="Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Lectus justo vulputate eget mollis sed."
         price="5 300, - Kč"
       />
@@ -15,7 +15,7 @@ const Services = () => {
         price="8 300, - Kč"
       />
       <Service
-        title="Celolepy"
+        title="Samolepky"
         text="Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Lectus justo vulputate eget mollis sed."
         price="2 300, - Kč"
       />
