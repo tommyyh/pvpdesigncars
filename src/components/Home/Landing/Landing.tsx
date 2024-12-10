@@ -4,21 +4,26 @@ import Button from '@/components/Button/Button';
 import LandingPng from '@/public/landing/landing.png';
 import ImageComponent from '@/components/Image/Image';
 
-const Landing = () => {
+type LandingType = {
+  setContactOpen: any;
+};
+
+const Landing = ({ setContactOpen }: LandingType) => {
   return (
     <main className={style.landing}>
       <h4>Vítejte u nás</h4>
 
       <div className={style.content}>
         <h1>
-          <span>Lorem ipsum dolor</span> <span>sit amet, consectetuer</span>{' '}
-          <span>adipiscing elit dolor prem.</span>
+          <span>Přeměňte své Vozidlo. </span>{' '}
+          <span>Celolepy, polepy, tuning,</span>
+          <span>samolepky, vše na míru</span>
         </h1>
 
         <Button
           title="Začít dnes"
-          href="https://www.instagram.com/pvpdesigncars/"
           customClass={style.button}
+          onClick={() => setContactOpen(true)}
         />
       </div>
 

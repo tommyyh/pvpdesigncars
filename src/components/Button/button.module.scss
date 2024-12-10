@@ -9,6 +9,9 @@
   border-radius: 10rem;
   text-decoration: none;
   transition: var(--transition);
+  font-family: var(--satoshi);
+  border: none;
+  cursor: pointer;
 
   &::before {
     content: '';

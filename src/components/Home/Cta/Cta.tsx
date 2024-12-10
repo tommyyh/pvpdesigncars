@@ -2,27 +2,28 @@ import React from 'react';
 import style from './cta.module.scss';
 import Button from '@/components/Button/Button';
 
-const Cta = () => {
+type CtaType = {
+  setContactOpen: any;
+};
+
+const Cta = ({ setContactOpen }: CtaType) => {
   return (
     <section className={style.cta}>
       <div className={style.inner}>
         <div>
           <h4>Začněte dnes</h4>
 
-          <h2>Lorem ipsum dolor sit amet, consectetuer adipiscing</h2>
+          <h2>Přeměňte své vozidlo S našimi kvalitními služby ještě dnes!</h2>
         </div>
 
         <div>
           <p>
-            Our real-time energy management system maximizes your investment.
-            Save money, gain independence, and optimize your energy use with
-            intelligent automation.
+            Naše úpravy nejsou jen vizuální záležitostí. Používáme pouze ty
+            nejkvalitnější materiály a dbáme na každý detail. Důvěřuj
+            profesionálům a investuj do budoucnosti svého vozidla.
           </p>
 
-          <Button
-            title="Začněte dnes"
-            href="https://www.instagram.com/pvpdesigncars/"
-          />
+          <Button title="Začněte dnes" onClick={() => setContactOpen(true)} />
         </div>
       </div>
     </section>

@@ -3,15 +3,15 @@ import style from './button.module.scss';
 
 type ButtonProps = {
   title: string;
-  href: string;
+  onClick?: any;
   customClass?: string;
 };
 
-const Button = ({ title, href, customClass }: ButtonProps) => {
+const Button = ({ title, onClick, customClass }: ButtonProps) => {
   return (
-    <a className={`${style.button} ${customClass}`} href={href} target="_blank">
+    <button className={`${style.button} ${customClass}`} onClick={onClick}>
       {title}
-    </a>
+    </button>
   );
 };
 

@@ -1,0 +1,49 @@
+@import '../../app/utils.scss';
+
+.clients {
+  padding: 11.5rem var(--padding) 0rem var(--padding);
+
+  h2 {
+    font-size: 1.45rem;
+    font-weight: 400;
+  }
+}
+
+// Logo image
+.carousel {
+  display: flex;
+
+  max-width: var(--content-width);
+  overflow-x: scroll;
+  margin: 1.8rem 0 0 0;
+  padding: 1.5rem 0 1.5rem 0;
+
+  // box-shadow: 0 0 200px #fff, secondVariation(0.6) 0px 0px 1000px inset;
+  border-radius: 1rem;
+
+  // Scrollbar
+  &::-webkit-scrollbar {
+    height: 0.5rem; // Whole width
+  }
+
+  &::-webkit-scrollbar-track {
+    background: initial; // Make the track invisible
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: #1e3655; // Scrollbar thumb
+    border-radius: 20rem;
+    cursor: pointer;
+
+    &:hover {
+      background: #355580;
+    }
+  }
+}
+
+.logoImage {
+  min-width: 13.2rem;
+  height: 7.2rem;
+  position: relative;
+  margin: 0 2rem;
+}

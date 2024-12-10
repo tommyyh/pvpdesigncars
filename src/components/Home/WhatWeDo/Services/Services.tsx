@@ -1,24 +1,27 @@
 import React from 'react';
 import style from './services.module.scss';
 
-const Services = () => {
+interface Service {
+  title: string;
+  text: string;
+  price: string;
+}
+
+type ServicesType = {
+  row: Service[];
+};
+
+const Services = ({ row }: ServicesType) => {
   return (
     <div className={style.services}>
-      <Service
-        title="Celolepy & částečné polepy"
-        text="Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Lectus justo vulputate eget mollis sed."
-        price="5 300, - Kč"
-      />
-      <Service
-        title="Reklamní polepy"
-        text="Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Lectus justo vulputate eget mollis sed."
-        price="8 300, - Kč"
-      />
-      <Service
-        title="Samolepky"
-        text="Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Lectus justo vulputate eget mollis sed."
-        price="2 300, - Kč"
-      />
+      {row.map((service, index) => (
+        <Service
+          key={index}
+          title={service.title}
+          text={service.text}
+          price={service.price}
+        />
+      ))}
     </div>
   );
 };
