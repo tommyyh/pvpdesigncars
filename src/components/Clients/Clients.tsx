@@ -20,7 +20,6 @@ import Logo17 from '@/public/logos/17.jpg';
 import Logo18 from '@/public/logos/18.svg';
 import Logo19 from '@/public/logos/19.svg';
 import Logo20 from '@/public/logos/20.svg';
-import ImageComponent from '../Image/Image';
 import Image from 'next/image';
 
 const Clients = () => {
