@@ -13,10 +13,11 @@
 // Logo image
 .carousel {
   display: flex;
+  align-items: center;
 
   max-width: var(--content-width);
   overflow-x: scroll;
-  margin: 1.8rem 0 0 0;
+  margin: 1.1rem 0 0 0;
   padding: 1.5rem 0 1.5rem 0;
 
   // box-shadow: 0 0 200px #fff, secondVariation(0.6) 0px 0px 1000px inset;
@@ -42,7 +43,7 @@
   }
 
   img {
-    margin: 0 6rem 0 0;
+    margin: 0 5.8rem 0 0;
     filter: brightness(0) invert(1);
   }
 }

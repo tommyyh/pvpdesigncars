@@ -19,6 +19,7 @@ import Logo17 from '@/public/logos/17.png';
 import Logo18 from '@/public/logos/18.png';
 import Logo19 from '@/public/logos/19.png';
 import Logo20 from '@/public/logos/20.png';
+import Logo21 from '@/public/logos/21.png';
 import Image from 'next/image';
 
 const Clients = () => {
@@ -28,6 +29,7 @@ const Clients = () => {
 
       <div className={style.carousel}>
         <LogoImage src={Logo1} />
+        <LogoImage src={Logo21} />
         <LogoImage src={Logo2} />
         <LogoImage src={Logo3} />
         <LogoImage src={Logo4} />
