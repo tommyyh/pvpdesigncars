@@ -7,7 +7,11 @@ import InstagramSvg from '@/public/icons/instagram.svg';
 import Link from 'next/link';
 import LogoPng from '@/public/icons/logo.png';
 
-const Nav = () => {
+type NavType = {
+  setContactOpen: any;
+};
+
+const Nav = ({ setContactOpen }: NavType) => {
   return (
     <nav id="home">
       <Header />
@@ -39,13 +43,11 @@ const Nav = () => {
             <li>
               <Link href={'#work'}>Naše Práce</Link>
             </li>
-            <li>
-              <a
-                href="https://www.instagram.com/pvpdesigncars/"
-                target="_blank"
-              >
-                Kontakt
-              </a>
+            <li
+              style={{ cursor: 'pointer' }}
+              onClick={() => setContactOpen(true)}
+            >
+              Kontakt
             </li>
           </ul>
 

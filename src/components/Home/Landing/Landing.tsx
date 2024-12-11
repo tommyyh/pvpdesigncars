@@ -11,12 +11,12 @@ type LandingType = {
 const Landing = ({ setContactOpen }: LandingType) => {
   return (
     <main className={style.landing}>
-      <h4>Vítejte u nás</h4>
+      <h4>Nechte si u nás udělat polep, reklama jste vy!</h4>
 
       <div className={style.content}>
         <h1>
-          <span>Přeměňte své Vozidlo. </span>{' '}
-          <span>Celolepy, polepy, tuning,</span>
+          <span>Přeměňte své vozidlo. </span>{' '}
+          <span>celolepy, polepy, tuning,</span>
           <span>samolepky, vše na míru</span>
         </h1>
 

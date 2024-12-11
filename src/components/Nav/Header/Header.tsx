@@ -23,7 +23,7 @@ const Header = () => {
 
         <li>
           <a href="tel:+420795835093">
-            <Image src={PhoneSvg} alt="Phone" /> +420 795 835 093
+            <Image src={PhoneSvg} alt="Phone" /> +420 720 823 339
           </a>
         </li>
       </ul>

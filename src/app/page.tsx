@@ -6,6 +6,7 @@ import Cta from '@/components/Home/Cta/Cta';
 import Landing from '@/components/Home/Landing/Landing';
 import WhatWeDo from '@/components/Home/WhatWeDo/WhatWeDo';
 import Work from '@/components/Home/Work/Work';
+import Nav from '@/components/Nav/Nav';
 import { useState } from 'react';
 
 const Home = () => {
@@ -13,6 +14,7 @@ const Home = () => {
 
   return (
     <>
+      <Nav setContactOpen={setContactOpen} />
       <Landing setContactOpen={setContactOpen} />
       <WhatWeDo />
       <Clients />

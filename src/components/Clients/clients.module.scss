@@ -39,11 +39,9 @@
       background: #355580;
     }
   }
-}
 
-.logoImage {
-  min-width: 13.2rem;
-  height: 7.2rem;
-  position: relative;
-  margin: 0 2rem;
+  img {
+    margin: 0 6rem 0 0;
+    filter: brightness(0) invert(1);
+  }
 }
