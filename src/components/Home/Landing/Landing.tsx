@@ -16,8 +16,8 @@ const Landing = ({ setContactOpen }: LandingType) => {
       <div className={style.content}>
         <h1>
           <span>Přeměňte své vozidlo. </span>{' '}
-          <span>celolepy, polepy, tuning,</span>
-          <span>samolepky, vše na míru</span>
+          <span>celolepy, reklamní polepy,</span>
+          <span>tuning, samolepky, vše na míru</span>
         </h1>
 
         <Button
