@@ -13,7 +13,7 @@ const Cta = ({ setContactOpen }: CtaType) => {
         <div>
           <h4>Začněte dnes</h4>
 
-          <h2>Přeměňte své vozidlo s našimi kvalitními služby ještě dnes!</h2>
+          <h2>Přeměňte své vozidlo s našimi kvalitními službami ještě dnes!</h2>
         </div>
 
         <div>
