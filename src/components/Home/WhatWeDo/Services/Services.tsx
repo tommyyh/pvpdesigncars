@@ -36,8 +36,10 @@ type ServiceType = {
 const Service = ({ title, text, price }: ServiceType) => {
   return (
     <div className={style.service}>
-      <h3>{title}</h3>
-      <p>{text}</p>
+      <div>
+        <h3>{title}</h3>
+        <p>{text}</p>
+      </div>
 
       <h4>{price}</h4>
     </div>

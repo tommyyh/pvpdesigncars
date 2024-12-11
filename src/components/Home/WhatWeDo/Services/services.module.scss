@@ -14,6 +14,10 @@
 
 // Service
 .service {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
   position: relative;
   padding: 3.06rem 3.56rem 1.94rem 3.56rem;
 
