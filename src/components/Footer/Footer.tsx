@@ -3,9 +3,9 @@ import style from './footer.module.scss';
 import Image from 'next/image';
 import FacebookSvg from '@/public/icons/facebook.svg';
 import InstagramSvg from '@/public/icons/instagram.svg';
-import LocationSvg from '@/public/icons/location_w.svg';
-import MailSvg from '@/public/icons/mail_w.svg';
-import PhoneSvg from '@/public/icons/phone_w.svg';
+import LocationSvg from '@/public/icons/location.svg';
+import MailSvg from '@/public/icons/mail.svg';
+import PhoneSvg from '@/public/icons/phone.svg';
 import LogoPng from '@/public/icons/logo.png';
 
 const Footer = () => {
@@ -31,11 +31,6 @@ const Footer = () => {
           <li>
             <a href="https://www.instagram.com/pvpdesigncars/" target="_blank">
               Kontakt
-            </a>
-          </li>
-          <li style={{ margin: '2rem 0 0 0' }}>
-            <a href="https://betalab.vercel.app/en" target="_blank">
-              Designoval: Betalab
             </a>
           </li>
         </ul>
@@ -82,7 +77,13 @@ const Footer = () => {
           </div>
         </div>
 
-        <h6>© Copyright 2024 PVPDesignCars. Všechna práva vyhrazena</h6>
+        <div className={style.right}>
+          <a href="https://betalab.vercel.app/en" target="_blank">
+            Designoval: Betalab
+          </a>
+
+          <h6>© Copyright 2024 PVPDesignCars. Všechna práva vyhrazena</h6>
+        </div>
       </div>
     </footer>
   );
