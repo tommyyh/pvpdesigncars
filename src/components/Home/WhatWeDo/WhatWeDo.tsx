@@ -17,7 +17,7 @@ const services = [
     {
       title: 'Reklamní polepy',
       text: 'Profesionální polepy vozů reklamními motivy. Vysoká odolnost a životnost. Ceny zahrnují návrh grafiky a aplikaci.',
-      price: '- Dle dohody',
+      price: '- Cena na vyžádání',
     },
   ],
   // ---
@@ -25,17 +25,17 @@ const services = [
     {
       title: 'Samolepky',
       text: 'Výroba a aplikace samolepek na různé povrchy. Ceny závisí na velikosti, materiálu a množství.',
-      price: '- Dle dohody',
+      price: '- Cena na vyžádání',
     },
     {
       title: 'Potisk oblečení',
       text: 'Potisk triček a dalších textilií vlastním designem. Ceny se odvíjejí od typu textilie a složitosti motivu.',
-      price: '- Dle dohody',
+      price: '- Cena na vyžádání',
     },
     {
       title: 'Zatmavování světel',
       text: 'Zatmavení předních a zadních světel fólií různých odstínů.',
-      price: '- Dle dohody',
+      price: '- Cena na vyžádání',
     },
   ],
   // ---
@@ -43,17 +43,17 @@ const services = [
     {
       title: 'Dechrom',
       text: 'Odstranění chromových prvků a jejich nahrazení černými nebo barevnými fóliemi.',
-      price: '- Dle dohody',
+      price: '- Cena na vyžádání',
     },
     {
       title: 'Zatmavování oken',
       text: 'Zatmavení bočních a zadního okna fólií různých odstínů. Zvýšení soukromí a tepelného komfortu.',
-      price: '- Dle dohody',
+      price: '- Cena na vyžádání',
     },
     {
       title: '2D polepy',
-      text: 'Polep plochými motivy. Ideální pro menší plochy a jednoduché designy. Ceny jsou velmi příznivé.',
-      price: '- Dle dohody',
+      text: 'Polep plochými motivy. Ideální pro menší plochy a jednoduché designy.',
+      price: '- Cena na vyžádání',
     },
   ],
 ];
