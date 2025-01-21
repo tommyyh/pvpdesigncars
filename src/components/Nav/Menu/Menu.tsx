@@ -1,4 +1,4 @@
-import React, { SetStateAction } from 'react';
+import React from 'react';
 import css from './style.module.scss';
 import Link from 'next/link';
 import LocationSvg from '@/public/icons/location.svg';
