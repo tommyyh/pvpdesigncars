@@ -29,3 +29,11 @@ body {
 html {
   scroll-behavior: smooth;
 }
+
+// Tablet
+@media (min-width: 700px) and (max-width: 1024px) {
+  html {
+    font-size: 25px;
+  }
+  
+}

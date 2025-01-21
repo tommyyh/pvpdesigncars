@@ -2,6 +2,7 @@
 
 import Clients from '@/components/Clients/Clients';
 import Contact from '@/components/Contact/Contact';
+import Footer from '@/components/Footer/Footer';
 import Cta from '@/components/Home/Cta/Cta';
 import Landing from '@/components/Home/Landing/Landing';
 import WhatWeDo from '@/components/Home/WhatWeDo/WhatWeDo';
@@ -22,6 +23,8 @@ const Home = () => {
       <Cta setContactOpen={setContactOpen} />
 
       <Contact contactOpen={contactOpen} setContactOpen={setContactOpen} />
+
+      <Footer setContactOpen={setContactOpen} />
     </>
   );
 };

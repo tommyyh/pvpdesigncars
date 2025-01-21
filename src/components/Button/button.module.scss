@@ -35,3 +35,44 @@
     }
   }
 }
+
+@media all and (max-width: 1024px) {
+  .button {
+    position: relative;
+  
+    font-size: 1.05rem;
+    font-weight: 400;
+    color: var(--second);
+    background: linear-gradient(90deg, rgba(166,12,12,1) 0%, rgba(229,75,75,1) 100%);
+    padding: 0.5rem 2.2rem 0.7rem 2.2rem;
+    border-radius: 10rem;
+    text-decoration: none;
+    transition: var(--transition);
+    font-family: var(--satoshi);
+    border: none;
+    cursor: pointer;
+  
+    &::before {
+      content: '';
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      bottom: 0.7rem;
+      width: 0%;
+      height: 1px;
+      
+      background: var(--second);
+      transition: var(--transition);
+      opacity: 0.7;
+    }
+  
+    &:hover {
+      opacity: 0.85;
+  
+      &::before {
+        width: 50%;
+      }
+    }
+  }
+
+}

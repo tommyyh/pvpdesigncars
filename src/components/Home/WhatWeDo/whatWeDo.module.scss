@@ -43,3 +43,49 @@
     }
   }
 }
+
+@media all and (max-width: 1024px) {
+  .wwd {
+    display: initial;
+    
+    width: 100%;
+  
+    .top {
+      width: initial;
+      padding: 7.2rem var(--padding) 0 var(--padding);
+    }
+  
+    h4 {
+      @include sub;
+  
+      width: fit-content;
+  
+      color: secondVariation(0.7);
+    }
+  
+    .content {
+      display: initial;
+      
+      margin: 0.97rem 0 0 0;
+  
+      h2 {
+        margin: 0.9rem 0 0 0;
+
+        font-size: 2.21rem;
+        font-weight: 600;
+        letter-spacing: -0.048rem;
+        line-height: 125%;
+      }
+  
+      p {
+        margin: 1.33rem 0 0 0;
+  
+        font-size: 1.1rem;
+        color: secondVariation(0.749);
+        font-weight: 300;
+        line-height: 164%;
+      }
+    }
+  }
+
+}

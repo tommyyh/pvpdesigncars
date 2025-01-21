@@ -13,15 +13,17 @@ type ServicesType = {
 
 const Services = ({ row }: ServicesType) => {
   return (
-    <div className={style.services}>
-      {row.map((service, index) => (
-        <Service
-          key={index}
-          title={service.title}
-          text={service.text}
-          price={service.price}
-        />
-      ))}
+    <div className={style.cont}>
+      <div className={style.services}>
+        {row.map((service, index) => (
+          <Service
+            key={index}
+            title={service.title}
+            text={service.text}
+            price={service.price}
+          />
+        ))}
+      </div>
     </div>
   );
 };

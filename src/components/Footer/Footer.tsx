@@ -1,4 +1,6 @@
-import React from 'react';
+'use client';
+
+import React, { SetStateAction } from 'react';
 import style from './footer.module.scss';
 import Image from 'next/image';
 import FacebookSvg from '@/public/icons/facebook.svg';
@@ -8,7 +10,11 @@ import MailSvg from '@/public/icons/mail.svg';
 import PhoneSvg from '@/public/icons/phone.svg';
 import LogoPng from '@/public/icons/logo.png';
 
-const Footer = () => {
+type FooterType = {
+  setContactOpen: React.Dispatch<SetStateAction<boolean>>;
+};
+
+const Footer = ({ setContactOpen }: FooterType) => {
   return (
     <footer className={style.footer}>
       <a href={'https://www.instagram.com/pvpdesigncars/'} target="_blank">
@@ -28,11 +34,7 @@ const Footer = () => {
           <li>
             <a href={'#work'}>Naše Práce</a>
           </li>
-          <li>
-            <a href="https://www.instagram.com/pvpdesigncars/" target="_blank">
-              Kontakt
-            </a>
-          </li>
+          <li onClick={() => setContactOpen(true)}>Kontakt</li>
         </ul>
 
         <div>
