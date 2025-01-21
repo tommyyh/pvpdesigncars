@@ -21,7 +21,7 @@ const Nav = ({ setContactOpen }: NavType) => {
   return (
     <nav id="home">
       <Header />
-      <Menu menuOpen={menuOpen} />
+      <Menu menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
 
       <div className={style.nav}>
         <div className={style.left}>

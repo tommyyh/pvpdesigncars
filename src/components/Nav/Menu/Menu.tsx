@@ -8,9 +8,10 @@ import Image from 'next/image';
 
 type MenuType = {
   menuOpen: boolean;
+  setMenuOpen: any;
 };
 
-const Menu = ({ menuOpen }: MenuType) => {
+const Menu = ({ menuOpen, setMenuOpen }: MenuType) => {
   return (
     <div
       className={
@@ -18,13 +19,13 @@ const Menu = ({ menuOpen }: MenuType) => {
       }
     >
       <ul className={css['menu-ul']}>
-        <li>
+        <li onClick={() => setMenuOpen(false)}>
           <Link href={'/'}>Home</Link>
         </li>
-        <li>
+        <li onClick={() => setMenuOpen(false)}>
           <Link href={'#services'}>Naše Služby</Link>
         </li>
-        <li>
+        <li onClick={() => setMenuOpen(false)}>
           <Link href={'#work'}>Naše Práce</Link>
         </li>
       </ul>
