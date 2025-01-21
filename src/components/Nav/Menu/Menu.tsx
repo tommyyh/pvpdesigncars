@@ -8,10 +8,9 @@ import Image from 'next/image';
 
 type MenuType = {
   menuOpen: boolean;
-  setMenuOpen: React.Dispatch<SetStateAction<boolean>>;
 };
 
-const Menu = ({ menuOpen, setMenuOpen }: MenuType) => {
+const Menu = ({ menuOpen }: MenuType) => {
   return (
     <div
       className={
