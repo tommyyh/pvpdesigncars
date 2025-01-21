@@ -1,4 +1,4 @@
-import React, { SetStateAction, useState } from 'react';
+import React, { SetStateAction } from 'react';
 import css from './style.module.scss';
 import Link from 'next/link';
 import LocationSvg from '@/public/icons/location.svg';
@@ -12,10 +12,6 @@ type MenuType = {
 };
 
 const Menu = ({ menuOpen, setMenuOpen }: MenuType) => {
-  const closeMenu = () => {
-    setMenuOpen(false);
-  };
-
   return (
     <div
       className={
