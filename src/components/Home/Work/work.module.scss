@@ -24,7 +24,7 @@
   margin: 0 0 2.8rem 0;
 
   // box-shadow: 0 4px 250px accentVariation(0.333);
-  filter: drop-shadow(0 4px 250px accentVariation(0.333));
+  filter: drop-shadow(0 4px 250px accentVariation(0.2));
 
   &:nth-child(even) {
     margin: 0 0 0 -2.82rem;
@@ -95,7 +95,7 @@
     margin: 2.22rem 0 0 0;
   
     // box-shadow: 0 4px 250px accentVariation(0.333);
-    filter: drop-shadow(0 4px 250px accentVariation(0.333));
+    filter: drop-shadow(0 4px 250px accentVariation(0.3));
   
     &:nth-child(even) {
       margin: 1.8rem 0 0 0;
